@@ -1,5 +1,5 @@
 FROM debian:latest
-LABEL MAINTAINER="https://github.com/AmrJ1"
+LABEL MAINTAINER="https://github.com/AmrJ1/At"
 
 WORKDIR /SocioPhish/
 ADD . /SocioPhish
@@ -9,4 +9,4 @@ RUN apt update && \
     apt install -y curl unzip wget && \
     apt install --no-install-recommends -y php && \
     apt clean
-CMD ["./sociophisher.sh"]
+CMD ["./At.sh"]

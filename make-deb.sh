@@ -1,6 +1,6 @@
 #!/bin/bash
-PACKAGE_NAME=SocioPhish
-SOCIOPHISH_VERSION=2.0
+PACKAGE_NAME=At
+At_VERSION=0.1
 PACKAGE_ARCH=all
 DISTRO=$(uname -o)
 
@@ -24,10 +24,10 @@ build_package() {
 	mkdir -p ./package/"$path_part"usr/opt
 	cp -rf ./.package/"$platform"/control ./package/DEBIAN/control
 	mkdir -p package/"$path_part"usr/opt/$PACKAGE_NAME
-	cp -rf ./LICENSE ./.sites ./.imgs ./SocioPhisher.sh ./package/"$path_part"usr/opt/$PACKAGE_NAME
+	cp -rf ./LICENSE ./.sites ./.imgs ./At.sh ./package/"$path_part"usr/opt/$PACKAGE_NAME
 	cp -rf ./.package/launch.sh ./package/"$path_part"usr/bin/$PACKAGE_NAME
 	chmod 755 ./package/DEBIAN
-	dpkg-deb --build ./package $PACKAGE_NAME\_$SOCIOPHISH_VERSION\_$PACKAGE_ARCH.deb
+	dpkg-deb --build ./package $PACKAGE_NAME\_$At_VERSION\_$PACKAGE_ARCH.deb
 }
 
 

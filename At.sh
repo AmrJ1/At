@@ -1,4 +1,6 @@
 #!/bin/bash
+
+
 ## ANSI colors (FG & BG)
 RED="$(printf '\033[31m')"  GREEN="$(printf '\033[32m')"  ORANGE="$(printf '\033[33m')"  BLUE="$(printf '\033[34m')"
 MAGENTA="$(printf '\033[35m')"  CYAN="$(printf '\033[36m')"  WHITE="$(printf '\033[37m')" BLACK="$(printf '\033[30m')"
@@ -208,16 +210,16 @@ msg_exit() {
 about() {
 	{ clear; banner; echo; }
 	cat <<- EOF
-		${GREEN}Author   ${RED}:  ${ORANGE}Amr ${RED}[ ${ORANGE}Amr-J ${RED}]
-		${GREEN}Github   ${RED}:  ${CYAN}https://github.com/AmrJ1
-		${GREEN}Version  ${RED}:  ${ORANGE}0.1
+		${GREEN}Author   ${RED}:  ${ORANGE}Alex Bieber ${RED}[ ${ORANGE}Alex-Bieber ${RED}]
+		${GREEN}Github   ${RED}:  ${CYAN}https://github.com/alexbieber
+		${GREEN}Version  ${RED}:  ${ORANGE}2.2
 
-		${REDBG}${WHITE} Thanks : My^_^
-								  Amr,-j ${RESETBG}
+		${REDBG}${WHITE} Thanks : Adi1090x,MoisesTapia,ThelinuxChoice
+								  DarkSecDevelopers,Alex Bieber,1RaY-1 ${RESETBG}
 
 		${RED}Warning:${WHITE}
-		${CYAN}This Tool is made for nothing purpose ${RED}!${WHITE}
-		${CYAN} this toolkit ${RED}!${WHITE}
+		${CYAN}This Tool is made for educational purpose only ${RED}!${WHITE}
+		${CYAN}Author will not be responsible for any misuse of this toolkit ${RED}!${WHITE}
 
 		${RED}[${WHITE}00${RED}]${ORANGE} Main Menu     ${RED}[${WHITE}99${RED}]${ORANGE} Exit
 
@@ -296,7 +298,7 @@ start_ngrok() {
 	echo -ne "\n\n${RED}[${WHITE}-${RED}]${GREEN} Launching Ngrok..."
 
     if [[ `command -v termux-chroot` ]]; then
-        sleep 2 && termux-chroot ./.server/ngrok http "$HOST":"$PORT" > /dev/null 2>&1 & # Thanks to Amr  (https://github.com/)
+        sleep 2 && termux-chroot ./.server/ngrok http "$HOST":"$PORT" > /dev/null 2>&1 & # Thanks to ALEX BIEBER (https://github.com/AmrJ1)
     else
         sleep 2 && ./.server/ngrok http "$HOST":"$PORT" > /dev/null 2>&1 &
     fi
